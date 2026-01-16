@@ -32,6 +32,7 @@ conda activate your_env
 
 Install dependencies
 ```bash
+cd/d your_file_path
 pip install -r requirements.txt
 ```
 
