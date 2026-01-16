@@ -27,7 +27,6 @@ conda create -n your_env python=3.11
 
 Activate the environment
 ```bash
-conda create -n your_env python=3.9
 conda activate your_env
 ```
 
