@@ -11,7 +11,7 @@ Torch 2.7.1
 Torchbnn 1.2  
 Matplotlib 3.10.3  
 Seaborn 0.13.2  
-Jupyter 1.1.1
+Jupyter 1.1.1  
 notebook 7.3.3  
 
 
