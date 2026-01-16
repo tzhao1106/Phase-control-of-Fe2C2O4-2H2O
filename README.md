@@ -1,8 +1,8 @@
-## 1. Overview
+### 1. Overview
 This repository contains an active-learning framework for iterative material selective synthesis. 
 
 
-## 2. Required Dependencies
+### 2. Required Dependencies
 Python 3.11 
 Numpy 1.26.4
 Pandas 2.2.3
@@ -14,30 +14,30 @@ Seaborn 0.13.2
 Jupyterlab 4.3.7
 
 
-## 3. Installation & Setup 
-### Clone the repository
+### 3. Installation & Setup 
+Clone the repository
 ```bash
 git clone https://github.com/TongZhao-1106/Phase-control-of-Fe2C2O4-2H2O.git
 ```
 
-### Create and activate a virtual environment
+Create and activate a virtual environment
 ```bash
 conda create -n activelearn python=3.11
 ```
 
-### Activate the environment
+Activate the environment
 ```bash
 conda create -n your_env python=3.9
 conda activate your_env
 ```
 
-### Install dependencies
+Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 
-## 4. Running the Active-Learning Workflow
+### 4. Running the Active-Learning Workflow
 
 The active learning loop is implemented as a series of notebooks:
 | Notebook | Description |
@@ -55,7 +55,7 @@ All data used for active learning are in a xlsx file
 |----------|-------------|
 | results.xlsx | All synthesis parameters and phase information in this study |	 
 
-### Run notebooks:
+Run notebooks:
 ```bash
 cd/d your_file_path
 jupyter notebook your_file.ipynb
