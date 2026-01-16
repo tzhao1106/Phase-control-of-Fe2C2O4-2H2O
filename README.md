@@ -1,5 +1,5 @@
 ### 1. Overview
-This repository contains an active-learning framework for iterative material selective synthesis. 
+This repository contains codes of an activa learning workflow for exploring the polymorph control of FeC2O4·2H2O in the co-precipitation synthesis. It can be extended to other synthesis systems involving additional synthesis variables such as pH, temperature, or additives, while practical implementation may require upgrading the robotic synthesis system and codes.
 
 
 ### 2. Required Dependencies
@@ -37,20 +37,20 @@ pip install -r requirements.txt
 ```
 
 
-### 4. Running the Active-Learning Workflow
+### 4. Usage
 
 The active learning loop is implemented as a series of notebooks:
 | Notebook | Description |
 |----------|-------------|
-| GPR_BO.ipynb | Bayesian optimization using Gaussian Process Regression |
+| GPR_BO.ipynb | Bayesian optimization using Gaussian Process Regression to find the best synthesis conditions of alpha phase |
 | RF_AL_iter0.ipynb | Train initial RF model & propose experiments for Iteration 1 |
-| RF_AL_iter1.ipynb | Retrain model with new data & propose Iteration 2 experiments |
-| RF_AL_iter2.ipynb | Continue active-learning loop with updated data |
-| RF_AL_iter3.ipynb | Final AL iteration for demonstration |
+| RF_AL_iter1.ipynb | Retrain model with updated dataset & propose Iteration 2 experiments |
+| RF_AL_iter2.ipynb | Retrain model with updated dataset & propose Iteration 3 experiments |
+| RF_AL_iter3.ipynb | Retrain model with updated dataset & test prediction accurancy using randomly selected samples |
 | BNN.ipynb / KNN.ipynb / SVM.ipynb / LR.ipynb| Baseline model comparisons without data scaling|
-| BNN-scale.ipynb / KNNBNN-scale.ipynb.ipynb / SVMBNN-scale.ipynb.ipynb / LRBNN-scale.ipynb.ipynb| Baseline model comparisons with data scaling|
+| BNN-scale.ipynb / KNN-scale.ipynb / SVM-scale.ipynb / LR-scale.ipynb | Baseline model comparisons with data scaling|
 
-All data used for active learning are in a xlsx file
+All data used for active learning are in the xlsx file. After each active-learning iteration, experimental measurements should be added to the data sheet.
 | Data | Description |
 |----------|-------------|
 | results.xlsx | All synthesis parameters and phase information in this study |	 
@@ -60,3 +60,5 @@ Run notebooks:
 cd/d your_file_path
 jupyter notebook your_file.ipynb
 ```
+
+
