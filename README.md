@@ -22,7 +22,7 @@ git clone https://github.com/TongZhao-1106/Phase-control-of-Fe2C2O4-2H2O.git
 
 Create and activate a virtual environment
 ```bash
-conda create -n activelearn python=3.11
+conda create -n your_env python=3.11
 ```
 
 Activate the environment
