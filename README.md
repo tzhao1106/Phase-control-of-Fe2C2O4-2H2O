@@ -33,7 +33,6 @@ conda activate your_env
 
 Install dependencies
 ```bash
-cd/d your_file_path
 pip install -r requirements.txt
 ```
 
@@ -58,7 +57,6 @@ All data used for active learning are in the xlsx file. After each active-learni
 
 Run notebooks:
 ```bash
-cd/d your_file_path
 jupyter notebook your_file.ipynb
 ```
 
